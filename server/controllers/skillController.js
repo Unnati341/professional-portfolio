@@ -1,6 +1,6 @@
 // SKILL CONTROLLER
 
-const Skill = require("../models/skill");
+const Skill = require("../models/Skill");
 
 // GET ALL SKILLS
 
