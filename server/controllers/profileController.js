@@ -1,6 +1,6 @@
 // PROFILE CONTROLLER
 
-const Profile = require("../models/profile.js");
+const Profile = require("../models/Profile.js");
 
 // GET PROFILE
 
