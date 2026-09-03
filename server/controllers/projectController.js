@@ -1,6 +1,6 @@
 // PROJECT CONTROLLER
 
-const Project = require("../models/project");
+const Project = require("../models/Project");
 
 // GET ALL PROJECTS
 
