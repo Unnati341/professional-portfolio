@@ -1,105 +1,137 @@
-# 🌤️ Weather Forecast Application
+# Professional Portfolio Website
 
-A responsive Weather Forecast Application built using **React.js, Node.js, Express.js, and OpenWeatherMap API**. The application allows users to search for a city and view its current weather conditions along with a 5-day forecast.
+A professional and responsive portfolio website for showcasing my skills, education, projects, and software development profile.
+
+## 🌐 Live Demo
+
+**Portfolio:** https://professional-portfolio-1-k7j8.onrender.com
+
+## 👩‍💻 About
+
+I am an MCA graduate and aspiring Software Developer with a strong foundation in web development and programming. This portfolio presents my technical skills, academic background, projects, and contact information.
 
 ## 🚀 Features
 
-* 🔍 Search weather by city name
-* 🌡️ Display current temperature and weather conditions
-* 💧 Show humidity and other weather details
-* 🌬️ Display wind speed
-* 📍 Show searched city and country
-* 📅 5-day weather forecast
-* ⏳ Loading state while fetching weather data
-* ❌ Error handling for invalid or unavailable cities
-* 🔐 API key protected through backend environment variables
-* 📱 Responsive user interface
+* Professional and responsive portfolio design
+* Dynamic profile information
+* Skills displayed by category
+* Project showcase with technologies used
+* Education section
+* Contact form
+* Contact messages stored in MongoDB
+* REST API integration
+* Production deployment using Render
+* MongoDB Atlas database integration
 
 ## 🛠️ Technologies Used
 
 ### Frontend
 
-* React.js
-* JavaScript
 * HTML5
 * CSS3
-* Vite
+* JavaScript
 
 ### Backend
 
 * Node.js
 * Express.js
-* REST API
-* JavaScript
+* REST APIs
 
-### API
+### Database
 
-* OpenWeatherMap API
+* MongoDB
+* MongoDB Atlas
 
-## 🏗️ Project Structure
+### Deployment
+
+* Render
+
+## 📂 Project Structure
 
 ```text
-weather-forecast-app/
+professional-portfolio/
 │
 ├── client/
-│   ├── public/
-│   └── src/
-│       ├── assets/
-│       ├── App.jsx
-│       ├── App.css
-│       ├── index.css
-│       └── main.jsx
+│   ├── assets/
+│   │   ├── images/
+│   │   └── resume/
+│   ├── css/
+│   ├── js/
+│   └── index.html
 │
 ├── server/
+│   ├── config/
 │   ├── controllers/
-│   │   └── weatherController.js
+│   ├── middleware/
+│   ├── models/
 │   ├── routes/
-│   │   └── weatherRoutes.js
-│   ├── services/
-│   │   └── weatherService.js
-│   ├── server.js
-│   ├── package.json
-│   └── package-lock.json
+│   ├── app.js
+│   └── server.js
 │
-├── .gitignore
 └── README.md
 ```
 
-## 🔄 How It Works
+## 🔌 API Endpoints
 
-1. User enters a city name in the React frontend.
-2. The frontend sends a request to the Express backend.
-3. The backend securely communicates with the OpenWeatherMap API.
-4. The backend retrieves location, current weather, and forecast data.
-5. The weather information is returned to the frontend.
-6. React dynamically displays the weather information.
-
-## 🔐 Environment Variables
-
-The OpenWeatherMap API key is stored securely in an environment variable.
-
-Create a `.env` file inside the `server` folder:
-
-```env
-OPENWEATHER_API_KEY=your_api_key_here
+```text
+GET  /api/profile
+GET  /api/skills
+GET  /api/projects
+GET  /api/education
+POST /api/contact
 ```
 
-**Note:** The `.env` file is not included in the GitHub repository for security reasons.
+## 📋 Projects Included
 
-## ▶️ How to Run Locally
+### Spotify Clone
+
+A responsive music streaming web application inspired by Spotify with interactive music player functionality.
+
+**Technologies:** HTML5, CSS3, JavaScript
+
+### Zoom Clone
+
+A real-time video conferencing web application supporting video/audio communication, room-based meetings, and messaging.
+
+**Technologies:** React.js, Socket.io, Node.js, Express.js
+
+### Wanderlust
+
+A full-stack hotel and accommodation booking website with user authentication and REST APIs.
+
+**Technologies:** Node.js, Express.js, MongoDB, Passport.js, bcrypt
+
+**Live Demo:** https://airbnb-project-gfdz.onrender.com/listings
+
+## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Unnati341/weather-forecast-app.git
+git clone https://github.com/Unnati341/professional-portfolio.git
+cd professional-portfolio
 ```
 
-### 2. Start the Backend
+### 2. Install backend dependencies
 
 ```bash
-cd weather-forecast-app/server
+cd server
 npm install
-npm run dev
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file inside the `server` folder and add your MongoDB connection string.
+
+```env
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+```
+
+### 4. Start the backend
+
+```bash
+node server.js
 ```
 
 The backend will run on:
@@ -108,51 +140,27 @@ The backend will run on:
 http://localhost:5000
 ```
 
-### 3. Start the Frontend
+### 5. Run the frontend
 
-Open another terminal:
+Open the `client/index.html` file using VS Code Live Server or another local static server.
 
-```bash
-cd weather-forecast-app/client
-npm install
-npm run dev
-```
+## 📱 Responsive Design
 
-The frontend will run on:
+The website is designed to work across:
 
-```text
-http://localhost:5173
-```
+* Desktop
+* Laptop
+* Tablet
+* Mobile devices
 
-## 📡 API Endpoint
-
-The backend provides the following endpoint:
-
-```text
-GET /api/weather?city=CityName
-```
-
-Example:
-
-```text
-http://localhost:5000/api/weather?city=Nagpur
-```
-
-## 📌 Project Highlights
-
-This project demonstrates:
-
-* External API integration
-* Async/Await
-* Backend API proxy
-* Environment-based configuration
-* REST API architecture
-* Error and fallback handling
-* Dynamic React UI updates
-* Responsive frontend design
-
-## 👩‍💻 Author
+## 👤 Author
 
 **Unnati Wankar**
 
-GitHub: https://github.com/Unnati341
+* GitHub: https://github.com/Unnati341
+* LinkedIn: https://www.linkedin.com/in/unnati-wankar/
+
+## 📄 License
+
+This project is created for portfolio and educational purposes.
+
